@@ -3,8 +3,10 @@ import github from "../../../public/githubLogo.svg";
 import instagram from "../../../public/instagramLogo.svg";
 import linkedin from "../../../public/linkedinLogo.svg";
 import whatsapp from "../../../public/whatsappLogo.svg";
+import TypingEffect from "../services/TypingEffect";
 
 export function Header() {
+  const texto = TypingEffect("Oi, eu sou o Sette ");
   return (
     <div className=" flex justify-between p-2">
       <img
@@ -12,10 +14,7 @@ export function Header() {
         alt=""
         className="rounded-full h-32 w-32 border-4 bg-green-local-500"
       />
-      <div className="gap-0">
-      <h1 className=" text-green-local-500">Oi, eu sou o Sette _</h1>
-      <h1 className=" text-green-local-500">Seja bem vindo ao meu portfólio</h1>
-      </div>
+      <h1 className=" text-green-local-500">{texto}</h1>
       <div className=" flex flex-row justify-items-start items-start">
         <a target="_blank" href="http://github.com/iugorsette">
           <Image width={24} alt="github" src={github} />
