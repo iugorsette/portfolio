@@ -12,20 +12,38 @@ export function Header() {
       <img
         src="https://github.com/iugorsette.png"
         alt=""
-        className="rounded-full h-32 w-32 border-4 bg-green-local-500"
+        className="rounded-full h-60 w-60 border-4 bg-green-local-500"
       />
-      <h1 className=" text-green-local-500">{texto}</h1>
+      <div className=" text-green-local-500 flex justify-center items-center ">
+        {texto}
+      </div>
       <div className=" flex flex-row justify-items-start items-start">
-        <a target="_blank" href="http://github.com/iugorsette">
+        <a
+          target="_blank"
+          href="https://github.com/iugorsette"
+          className="hover:shadow-sm hover:bg-zinc-700 rounded-full "
+        >
           <Image width={24} alt="github" src={github} />
         </a>
-        <a target="_blank" href="http://instagram.com/iugorsette">
+        <a
+          target="_blank"
+          href="https://instagram.com/iugorsette"
+          className="hover:shadow-sm hover:bg-zinc-700 rounded-full "
+        >
           <Image width={24} alt="instagram" src={instagram} />
         </a>
-        <a target="_blank" href="http://linkedin.com/iugorsette">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/iugor-sette-66a0a0185/"
+          className="hover:shadow-sm hover:bg-zinc-700 rounded-full "
+        >
           <Image width={24} alt="linkedin" src={linkedin} />
         </a>
-        <a target="_blank" href="http://whatsapp.com/iugorsette">
+        <a
+          target="_blank"
+          href="https://wa.me/5531988071497"
+          className="hover:shadow-sm hover:bg-zinc-700 rounded-full "
+        >
           <Image width={24} alt="whatsapp" src={whatsapp} />
         </a>
       </div>

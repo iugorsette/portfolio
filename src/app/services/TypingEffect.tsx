@@ -21,8 +21,8 @@ const TypingEffect = (text: string) => {
   }, [text]);
 
   return (
-    <div className="text-2xl relative">
-      <p>{displayText}<span className="text-2xl animate-blink">_</span></p>
+    <div className="text-4xl relative">
+      <p>{displayText}<span className="text-4xl animate-blink">_</span></p>
     </div>
   );
 };
