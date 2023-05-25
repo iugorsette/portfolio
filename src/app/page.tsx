@@ -4,12 +4,13 @@ import { Header } from "./components/Header";
 import { Content } from "./components/Content";
 import { Footer } from "./components/Footer";
 
-
 export default function Home() {
   return (
-    <div className="bg-zinc-800 ">
+    <div className="flex flex-col min-h-screen bg-zinc-800">
       <Header />
-      <Content />
+      <div className="flex-grow">
+        <Content />
+      </div>
       <Footer />
     </div>
   );

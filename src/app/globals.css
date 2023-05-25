@@ -17,3 +17,22 @@
 .animate-blink {
   animation: blink 2s infinite;
 }
+
+.carousel-slide {
+  height: 8rem;
+  width: 40%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .carousel-slide {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-slide {
+    width: 60%;
+  }
+}

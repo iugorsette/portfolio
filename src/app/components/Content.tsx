@@ -9,6 +9,8 @@ export function Content() {
         <span className="text-green-local-500">React</span>, 
         <span className="text-green-local-500">Node.js</span>,
         <span className="text-green-local-500">MongoDB</span>, 
+        <span className="text-green-local-500">Docker</span>, 
+        <span className="text-green-local-500">MySQL</span>, 
         <span className="text-green-local-500">HTML</span>, 
         <span className="text-green-local-500">CSS</span> e 
         <span className="text-green-local-500">TypeScript</span>. Através dessas habilidades, sou capaz
