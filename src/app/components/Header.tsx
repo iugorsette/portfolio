@@ -6,21 +6,22 @@ import instagram from "../../../public/instagramLogo.svg";
 import linkedin from "../../../public/linkedinLogo.svg";
 import whatsapp from "../../../public/whatsappLogo.svg";
 import TypingEffect from "../services/TypingEffect";
-
+import foto from "../../../public/picture/foto-github.png";
 export function Header() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
-  const size = isMobile ? 30 : 60;
+  const size = isMobile ? 96 : 248;
   const texto = isMobile
     ? TypingEffect("Oi,*eu sou o Sette") // Texto para dispositivos móveis
     : TypingEffect("Oi, eu sou o Sette*Seja bem-vindo ao meu portfólio"); // Texto padrão
 
   return (
     <div className=" flex justify-between p-2">
-      <div className="rounded-full border-2 border-green-local-500 bg-green-local-500 h-${size} w-${size} ">
+      <div className='rounded-full border-2 border-green-local-500 bg-green-local-500 '>
         <Image
-          src="https://github.com/iugorsette.png"
+          width={size}
+          src={foto}
           alt=""
-          className={`rounded-full h-${size} w-${size} bg-green-local-500`}
+          className='rounded-full bg-green-local-500'
         />
       </div>
 
