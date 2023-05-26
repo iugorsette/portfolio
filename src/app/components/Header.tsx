@@ -46,7 +46,7 @@ export function Header() {
         </a>
         <a
           target="_blank"
-          href="https://www.linkedin.com/in/iugor-sette-66a0a0185/"
+          href="https://www.linkedin.com/in/iugorsette/"
           className="hover:shadow-sm hover:bg-zinc-700 rounded-full w-8"
         >
           <Image alt="linkedin" src={linkedin} />
