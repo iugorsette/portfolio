@@ -13,44 +13,59 @@ import css from "../../../public/css.svg";
 import html from "../../../public/html.svg";
 
 const CarouselComponent = () => {
+  const imageSize = 96;
   return (
-    <Carousel
-      autoPlay
-      infiniteLoop
-      showStatus={false}
-      showThumbs={false}
-      //   showArrows={false}
-      showIndicators={false}
-      centerMode
-      centerSlidePercentage={100 / 5} // Ajusta a largura de cada slide para ocupar 1/5 do carrossel
-      swipeable={false} // Desabilita o swipe para evitar a mudança de slide parcial
-      className="w-5/6 h-36"
-    >
-      <div className="carousel-slide">
-        <Image src={react} alt="React -  Framework front-end" />
-      </div>
-      <div className="carousel-slide">
-        <Image src={nodejs} alt="Nodejs - " />
-      </div>
-      <div className="carousel-slide">
+    <div className="flex justify-center gap-5">
+      <div>
         <Image
-          src={typescript}
-          alt="Typescript - Superset da linguagem JavaScript"
+          width={imageSize}
+          src={react}
+          alt="React - The library for web and native user interfaces"
         />
       </div>
-      <div className="carousel-slide">
-        <Image src={mongodb} alt="Mongodb" />
+      <div>
+        <Image
+          width={imageSize}
+          src={nodejs}
+          alt="Nodejs - Cross-platform JavaScript runtime environment"
+        />
       </div>
-      <div className="carousel-slide">
-        <Image src={mysql} alt="MySQL" />
+      <div>
+        <Image
+          width={imageSize}
+          src={typescript}
+          alt="Typescript - TypeScript is JavaScript with syntax for types."
+        />
       </div>
-      <div className="carousel-slide">
-        <Image src={css} alt="CSS" />
+      <div>
+        <Image
+          width={imageSize}
+          src={mongodb}
+          alt="Mongodb - MongoDB is a document database used to build highly available and scalable internet applications"
+        />
       </div>
-      <div className="carousel-slide">
-        <Image src={html} alt="HTML" />
+      <div>
+        <Image
+          width={imageSize}
+          src={mysql}
+          alt="MySQL - MySQL is an open-source relational database management system."
+        />
       </div>
-    </Carousel>
+      <div>
+        <Image
+          width={imageSize}
+          src={css}
+          alt="CSS - CSS is the language we use to style an HTML document."
+        />
+      </div>
+      <div>
+        <Image
+          width={imageSize}
+          src={html}
+          alt="HTML - HTML is the standard markup language for Web pages"
+        />
+      </div>
+    </div>
   );
 };
 

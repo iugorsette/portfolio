@@ -6,7 +6,7 @@ import whatsapp from "../../../public/whatsappLogo.svg";
 import TypingEffect from "../services/TypingEffect";
 
 export function Header() {
-  const texto = TypingEffect("Oi, eu sou o Sette ");
+  const texto = TypingEffect(`Oi, eu sou o Sette *Seja bem vindo ao meu portfólio`);
   return (
     <div className=" flex justify-between p-2">
       <img
