@@ -13,8 +13,8 @@ export function Header() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const size = isMobile ? 96 : 248;
   const texto = isMobile
-    ? TypingEffect("Oi,*eu sou o Sette") // Texto para dispositivos móveis
-    : TypingEffect("Oi, eu sou o Sette*Seja bem-vindo ao meu portfólio"); // Texto padrão
+    ? TypingEffect("Oi,*eu sou o Sette")
+    : TypingEffect("Oi, eu sou o Sette*Seja bem-vindo ao meu portfólio"); 
 
   return (
     <div className=" flex justify-between p-2">
