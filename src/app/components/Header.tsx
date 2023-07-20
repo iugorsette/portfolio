@@ -12,7 +12,7 @@ import { ImageLink } from "./ImageLink";
 export function Header() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const size = isMobile ? 96 : 248;
-  const texto = isMobile
+  const text = isMobile
     ? TypingEffect("Oi,*eu sou o Sette")
     : TypingEffect("Oi, eu sou o Sette*Seja bem-vindo ao meu portfólio"); 
 
@@ -28,7 +28,7 @@ export function Header() {
       </div>
 
       <div className=" text-green-local-500 flex justify-center items-center ">
-        {texto}
+        {text}
       </div>
 
       <div className=" flex flex-row items-start justify-items-start ">
