@@ -23,7 +23,7 @@ const TypingEffect = ( text: string ) => {
     }, 100);
 
     return () => clearInterval(interval);
-  }, [text]);
+  }, []);
 
   return (
     <div className="text-4xl relative" style={{ whiteSpace: "pre-line" }}>
