@@ -7,6 +7,8 @@ import linkedin from "../../../public/linkedinLogo.svg";
 import whatsapp from "../../../public/whatsappLogo.svg";
 import TypingEffect from "../services/TypingEffect";
 import foto from "../../../public/picture/foto-github.png";
+import { ImageLink } from "./ImageLink";
+
 export function Header() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const size = isMobile ? 96 : 248;
@@ -16,12 +18,12 @@ export function Header() {
 
   return (
     <div className=" flex justify-between p-2">
-      <div className='rounded-full border-2 border-green-local-500 bg-green-local-500 '>
+      <div className="rounded-full border-2 border-green-local-500 bg-green-local-500 ">
         <Image
           width={size}
           src={foto}
           alt=""
-          className='rounded-full bg-green-local-500'
+          className="rounded-full bg-green-local-500"
         />
       </div>
 
@@ -30,34 +32,10 @@ export function Header() {
       </div>
 
       <div className=" flex flex-row items-start justify-items-start ">
-        <a
-          target="_blank"
-          href="https://github.com/iugorsette"
-          className="hover:shadow-sm hover:bg-zinc-700 rounded-full w-8 "
-        >
-          <Image alt="github" src={github} />
-        </a>
-        <a
-          target="_blank"
-          href="https://instagram.com/iugorsette"
-          className="hover:shadow-sm hover:bg-zinc-700 rounded-full w-8"
-        >
-          <Image alt="instagram" src={instagram} />
-        </a>
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/iugorsette/"
-          className="hover:shadow-sm hover:bg-zinc-700 rounded-full w-8"
-        >
-          <Image alt="linkedin" src={linkedin} />
-        </a>
-        <a
-          target="_blank"
-          href="https://wa.me/5531988071497"
-          className="hover:shadow-sm hover:bg-zinc-700 rounded-full w-8"
-        >
-          <Image alt="whatsapp" src={whatsapp} />
-        </a>
+        <ImageLink link="https://github.com/iugorsette" image={github} />
+        <ImageLink link="https://instagram.com/iugorsette" image={instagram} />
+        <ImageLink link="https://www.linkedin.com/in/iugorsette/" image={linkedin} />
+        <ImageLink link="https://wa.me/5531988071497" image={whatsapp} />
       </div>
     </div>
   );
