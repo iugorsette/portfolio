@@ -1,7 +1,6 @@
 import { AnimateLogo } from "./animation/AnimationLogo";
 import { Header } from "./components/Header";
 import { Technologies } from "./components/Technologies";
-import { Icon } from "./phosphor/Icon";
 
 export default function Home() {
   return (
