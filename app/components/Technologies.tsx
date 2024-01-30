@@ -18,7 +18,7 @@ export function Technologies() {
     {
       name: 'ReactJs',
       url: 'https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp',
-      description: 'I have ever built a web application using ReactJs and React Native in my university, is a mobile application for Pizza Delivery (WMS) and you can see on my github.',
+      description: 'I have ever built a web application using ReactJs and React Native in my university, is a mobile application for Pizza Delivery and you can see on my github.',
     },
     {
       name: 'NodeJS',
