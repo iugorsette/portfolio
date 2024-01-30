@@ -7,6 +7,7 @@ export const AnimateLogo = () => {
   const options = {
     animationData,
     loop: true
+    
   };
 
   const { View } = useLottie(options);

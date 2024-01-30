@@ -14,7 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        'local-purple': {
+        "local-purple": {
           50: "#faf5ff",
           100: "#f3e8ff",
           200: "#e9d5ff",
@@ -25,9 +25,8 @@ const config: Config = {
           700: "#7e22ce",
           800: "#6b21a8",
           900: "#371A45",
-        },}
-      ,
-
+        },
+      },
     },
   },
   plugins: [],

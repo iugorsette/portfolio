@@ -1,82 +1,63 @@
 export function Technologies() {
+  const getBorderColor = (tech: string) => {
+    switch (tech.toLowerCase()) {
+      case 'reactjs':
+        return 'hover:border-blue-500';
+      case 'nodejs':
+        return 'hover:border-green-500';
+      case 'angularjs':
+        return 'hover:border-red-500';
+      case 'nestjs':
+        return 'hover:border-yellow-500';
+      default:
+        return 'hover:border-gray-300';
+    }
+  };
+
+  const techData = [
+    {
+      name: 'ReactJs',
+      url: 'https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp',
+      description: 'I have ever built a web application using ReactJs and React Native in my university, is a mobile application for Pizza Delivery (WMS) and you can see on my github.',
+    },
+    {
+      name: 'NodeJS',
+      url: 'https://github.com/iugorsette/task-login-backend',
+      description: 'I create and implement new features performing process automation, as well as working on troubleshooting nodejs applications, I am still working on it.',
+    },
+    {
+      name: 'AngularJS',
+      url: 'https://github.com/iugorsette/warehouse-frontend',
+      description: 'I built a web application using AngularJS, that\'s app for Warehouse management system (WMS) and you can see on my github.',
+    },
+    {
+      name: 'NestJs',
+      url: 'https://github.com/iugorsette/warehouse-backend',
+      description: 'I built a back-end web application using NestJs and MySQL, that\'s app for Warehouse management system (WMS) and you can see on my github.',
+    },
+  ];
+
   return (
-    <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-      <a
-        href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <h2 className={`mb-3 text-2xl font-semibold`}>
-          ReactJs{" "}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            -&gt;
-          </span>
-        </h2>
-        <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-          I have ever built a web application using <span>ReactJs</span> and{" "}
-          <span>React Native</span> in my university, is a mobile application
-          for <span> Pizza Delivery </span> (WMS) and you can see on my github
-        </p>
-      </a>
-
-      <a
-        href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <h2 className={`mb-3 text-2xl font-semibold`}>
-          NodeJS{" "}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            -&gt;
-          </span>
-        </h2>
-        <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-          I create and implement new features performing process automation, as
-          well as working on troubleshooting <span>nodejs</span> applications, I
-          am still working on it
-        </p>
-      </a>
-
-      <a
-        href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <h2 className={`mb-3 text-2xl font-semibold`}>
-          AngularJS{" "}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            -&gt;
-          </span>
-        </h2>
-        <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-          I built a web application using <span>AngularJS</span>, that{"'"}s app
-          for <span>Warehouse management system </span> (WMS) and you can see on
-          my github
-        </p>
-      </a>
-
-      <a
-        href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <h2 className={`mb-3 text-2xl font-semibold`}>
-          NestJs{" "}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            -&gt;
-          </span>
-        </h2>
-        <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-          I built a back-end web application using <span>NestJs</span> and{" "}
-          <span>MySQL</span>, that{"'"}s app for{" "}
-          <span>Warehouse management system </span> (WMS) and you can see on my
-          github
-        </p>
-      </a>
+    <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left gap-2">
+      {techData.map((tech) => (
+        <a
+          key={tech.name}
+          href={tech.url}
+          className={`group rounded-lg border border-gray-300 px-5 py-4 transition-colors ${getBorderColor(tech.name)} hover:bg-gray-100 hover:dark:bg-neutral-800/30`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            {tech.name}{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            {tech.description}
+          </p>
+        </a>
+      ))}
     </div>
   );
 }
