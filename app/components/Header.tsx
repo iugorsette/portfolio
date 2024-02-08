@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect, useRef } from "react";
 import { SocialMedias } from "./SocialMedia";
+import { ThemeSwitchButton } from "./ThemeSwitchButton";
 
 interface HeaderProps {}
 
@@ -39,7 +40,11 @@ export function Header({}: HeaderProps) {
           <span className={cursorVisible ? "opacity-100" : "opacity-0"}>_</span>
         </h1>
       </div>
+      <div className="flex gap-8">
       <SocialMedias />
+      <ThemeSwitchButton />
+      </div>
+
     </div>
   );
 }
