@@ -37,7 +37,7 @@ export function SocialMedias() {
   ];
 
   return (
-    <div className="fixed bottom-0 pb-2  left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none gap-2">
+    <div className="z-10 fixed bottom-0 pb-2  left-0 flex h-24 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none gap-2">
       {socialIcons.map((social, index) => (
         <a
           key={index}

@@ -8,7 +8,7 @@ export function About() {
     link.click();
   };
   return (
-    <div className="z-10 mt-20 max-w-5xl w-full font-mono text-sm lg:flex flex-col">
+    <div className="mt-20 max-w-5xl w-full font-mono text-sm lg:flex flex-col">
       <p className="text-lg">
         <span className=" text-xl">
           Hi, my name is <span className="text-sky-600">Sette</span>.
