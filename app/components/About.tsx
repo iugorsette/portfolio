@@ -35,7 +35,7 @@ export function About() {
       <p className="text-lg mb-8">
         As part of my current role, I work with
         <span className="text-yellow-600"> Python</span> and
-        <span className="text-yellow-600"> Vanilla JS</span>,and develop RPA
+        <span className="text-yellow-600"> Vanilla JS</span>, and develop RPA
         solutions. I also perform maintenance tasks and have gained hands-on
         experience working with various tools such as
         <span className="text-sky-600"> Docker</span>,
