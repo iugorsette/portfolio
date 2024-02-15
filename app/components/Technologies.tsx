@@ -71,23 +71,10 @@ export function Technologies() {
   return (
     <div className="mt-5 max-w-5xl w-full font-mono text-sm lg:flex flex-col">
       <p className="text-lg mb-8">
-        In my current position, I am involved in activities that provide me with
-        the opportunity to improve my knowledge of{" "}
-        <span className="text-yellow-600">Python</span> and
-        <span className="text-yellow-600"> Vanilla JS</span>. Perform
-        maintenance tasks and develop RPA solutions. Furthermore, I had the
-        opportunity to gain experience working with tools such as
-        <span className="text-sky-600"> Docker</span>,
-        <span className="text-sky-600"> Puppeteer</span>,
-        <span className="text-sky-600"> Nutjs</span>,
-        <span className="text-sky-600"> GitHub</span>,
-        <span className="text-sky-600"> GraphQL</span>, and many others.
+        You can find some of
+        <span className="text-local-purple-600"> my personal projects </span>
+        below.
       </p>
-      <p className="text-lg mb-8">
-        Below you can see some of
-        <span className="text-local-purple-600"> my personal projects </span>.
-      </p>
-
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left gap-2">
         {techData.map((tech) => (
           <a
