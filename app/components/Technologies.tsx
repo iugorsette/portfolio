@@ -65,7 +65,13 @@ export function Technologies() {
       url: "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t6-rocypt",
       description:
         "I contributed to a password manager API project developed in .NET C#. We employed agile methodologies throughout the project to enhance collaboration and flexibility in our development process.",
-    },
+    },{
+      name: "Heroes",
+      stack: "ReactJS",
+      url: "https://github.com/iugorsette/heroes",
+      description:
+        "I developed a web game in React JS, using a heroes API. Choose your heroes, face off against a bot. Check out the code on GitHub here.",
+    }
   ];
 
   return (
