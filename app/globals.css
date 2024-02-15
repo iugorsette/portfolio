@@ -35,14 +35,16 @@ body {
 }
 
 
-
 .neon-btn {
   color: var(--default-color);
   position: relative;
   background-color: transparent;
-  border: none;
+  border: 1px solid #a7a7a7;
   outline: none;
   overflow: hidden;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+  padding: 1rem 1rem;
 }
 
 .neon-btn::before {
@@ -56,31 +58,45 @@ body {
   background: linear-gradient(45deg,  #8e2de2, #4a00e0);
   opacity: 0;
   z-index: -1;
-  animation: neonAnimation 2s ease-in-out infinite alternate;
-  transition: opacity 0.5s ease-in-out;
+  animation: neonAnimation 1s infinite alternate;
+  animation-timing-function: ease-in-out; 
 }
 
 .neon-btn:hover::before {
   opacity: 1;
 }
-
 @keyframes neonAnimation {
   0% {
-    background: linear-gradient(30deg, #8e2de2, #4a00e0);
+    background: linear-gradient(10deg, #8e2de2, #4a00e0);
   }
   10% {
-    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    background: linear-gradient(20deg, #8e2de2, #4a00e0);
   }
-  25% {
-    background: linear-gradient(60deg, #8e2de2, #4a00e0);
+  20% {
+    background: linear-gradient(30deg, #8e2de2, #4a00e0);
+  }
+  30% {
+    background: linear-gradient(40deg, #8e2de2, #4a00e0);
+  }
+  40% {
+    background: linear-gradient(50deg, #8e2de2, #4a00e0);
   }
   50% {
-    background: linear-gradient(75deg, #8e2de2, #4a00e0);
+    background: linear-gradient(60deg, #8e2de2, #4a00e0);
   }
-  75% {
+  60% {
+    background: linear-gradient(70deg, #8e2de2, #4a00e0);
+  }
+  70% {
+    background: linear-gradient(80deg, #8e2de2, #4a00e0);
+  }
+  80% {
     background: linear-gradient(90deg, #8e2de2, #4a00e0);
   }
+  90% {
+    background: linear-gradient(100deg, #8e2de2, #4a00e0);
+  }
   100% {
-    background:  linear-gradient(105deg, #8e2de2, #4a00e0);;
+    background:  linear-gradient(110deg,  #8e2de2, #4a00e0);
   }
 }

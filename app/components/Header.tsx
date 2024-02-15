@@ -1,7 +1,6 @@
 'use client'
 import { useState, useEffect, useRef } from "react";
 import { SocialMedias } from "./SocialMedia";
-import { ThemeSwitchButton } from "./ThemeSwitchButton";
 
 interface HeaderProps {}
 
@@ -34,17 +33,13 @@ export function Header({}: HeaderProps) {
 
   return (
     <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-      <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+      <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center lg:static lg:h-auto lg:w-auto lg:bg-none">
         <h1 >
           {typedText}
           <span className={cursorVisible ? "opacity-100" : "opacity-0"}>_</span>
         </h1>
       </div>
-      <div className="flex gap-8">
       <SocialMedias />
-      <ThemeSwitchButton />
-      </div>
-
     </div>
   );
 }

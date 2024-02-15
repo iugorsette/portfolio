@@ -8,8 +8,8 @@ export function About() {
     link.click();
   };
   return (
-    <div className="flex flex-col p-24 gap-4">
-      <p className=" text-lg">
+    <div className="z-10 mt-20 max-w-5xl w-full font-mono text-sm lg:flex flex-col">
+      <p className="text-lg">
         <span className=" text-xl">
           Hello, I&apos;m <span className="text-sky-600">Sette</span>.
         </span>
@@ -27,14 +27,19 @@ export function About() {
         </span>
       </p>
 
-      <p className="text-lg" >This portfolio is a way to demonstrate my knowledge in <span className="text-sky-600">web development</span>.</p>
-      <button
-        className="neon-btn bg-local-purple-600 text-white font-bold py-2 px-4 rounded mt-8 w-32 self-center"
-        type="button"
-        onClick={downloadcv}
-      >
-        Download CV
-      </button>
+      <p className="text-lg">
+        This portfolio is a way to demonstrate my knowledge in{" "}
+        <span className="text-sky-600">web development</span>.
+      </p>
+      <div className="w-full flex justify-center">
+        <button
+          className="neon-btn bg-local-purple-600 text-white font-bold py-2 px-4 rounded mt-8 w-32 self-center"
+          type="button"
+          onClick={downloadcv}
+        >
+          Download CV
+        </button>
+      </div>
     </div>
   );
 }
