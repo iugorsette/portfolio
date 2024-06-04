@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sette Portfolio",
-  description: "Hi, I'm Sette, a web developer and RPA developer. This is my portfolio.",
+  description:
+    "Hi, I`&apos;`m Sette, a web developer and RPA developer. This is my portfolio.",
 };
 
 export default function RootLayout({
@@ -15,9 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en"><style>
-    @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
-    </style>
+    <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
   );

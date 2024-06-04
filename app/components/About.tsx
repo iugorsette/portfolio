@@ -46,9 +46,9 @@ export function About() {
       </p>
       <p className="text-lg">
         My true passion lies in 
-        <span className="text-sky-600"> frontend development</span>, where I've been dedicating
+        <span className="text-sky-600"> frontend development</span>, where I`&apos;`ve been dedicating
         my time to personal projects using the <span className="text-blue-600">  React</span> and <span className="text-red-600"> Angular</span> frameworks.
-        Through these experiences, I've been able to enhance my skills in
+        Through these experiences, I`&apos;`ve been able to enhance my skills in
         creating engaging and functional user interfaces, applying the latest
         concepts and best practices with <span className="text-local-purple-600"> UI</span>/<span className="text-local-purple-600">UX</span> design.
       </p>
