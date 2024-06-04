@@ -1,16 +1,16 @@
 export function About() {
   const downloadcv = () => {
-    const pdfUrl = "/Profile.pdf";
+    const pdfUrl = '/Profile.pdf'
 
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "Profile.pdf";
-    link.click();
-  };
+    const link = document.createElement('a')
+    link.href = pdfUrl
+    link.download = 'Profile.pdf'
+    link.click()
+  }
   return (
     <div className="mt-20 max-w-5xl w-full font-mono text-sm lg:flex flex-col ">
       <h2
-        className="text-3xl font-bold  pb-8 dark:text-white text-black  text-purple-600 electrolize-regular "
+        className="text-3xl font-bold  pb-8 dark:text-white text-black electrolize-regular "
         data-aos="fade-up"
       >
         Who am I
@@ -19,22 +19,22 @@ export function About() {
         <span className=" text-xl">
           Hi, my name is <span className="text-sky-600 ">Sette</span>.
         </span>
-        <br /> I am currently studying{" "}
+        <br /> I am currently studying{' '}
         <a
           className="text-local-purple-600 hover:text-local-purple-800"
           href="https://www.pucminas.br/PucVirtual/Graduacao/Paginas/Analise-e-Desenvolvimento-de-Sistemas-Tecnologo.aspx"
           target="_blank"
         >
           Systems Analysis and Development
-        </a>{" "}
-        and working with{" "}
+        </a>{' '}
+        and working with{' '}
         <span className="text-local-purple-600">
           Robotic Process Automation (RPA)
         </span>
       </p>
 
       <p className="text-lg">
-        This portfolio showcases my{" "}
+        This portfolio showcases my{' '}
         <span className="text-sky-600">web development</span> skills and
         knowledge.
       </p>
@@ -51,12 +51,16 @@ export function About() {
         <span className="text-sky-600"> GraphQL</span>, and more.
       </p>
       <p className="text-lg">
-        My true passion lies in 
-        <span className="text-sky-600"> frontend development</span>, where I&apos;ve been dedicating
-        my time to personal projects using the <span className="text-blue-600">  React</span> and <span className="text-red-600"> Angular</span> frameworks.
-        Through these experiences, I&apos;ve been able to enhance my skills in
-        creating engaging and functional user interfaces, applying the latest
-        concepts and best practices with <span className="text-local-purple-600"> UI</span>/<span className="text-local-purple-600">UX</span> design.
+        My true passion lies in
+        <span className="text-sky-600"> frontend development</span>, where
+        I&apos;ve been dedicating my time to personal projects using the{' '}
+        <span className="text-blue-600"> React</span> and{' '}
+        <span className="text-red-600"> Angular</span> frameworks. Through these
+        experiences, I&apos;ve been able to enhance my skills in creating
+        engaging and functional user interfaces, applying the latest concepts
+        and best practices with{' '}
+        <span className="text-local-purple-600"> UI</span>/
+        <span className="text-local-purple-600">UX</span> design.
       </p>
 
       <div className="w-full flex justify-center">
@@ -69,5 +73,5 @@ export function About() {
         </button>
       </div>
     </div>
-  );
+  )
 }

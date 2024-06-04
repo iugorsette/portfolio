@@ -29,7 +29,7 @@ export function Background() {
     after:dark:opacity-40 
     before:lg:h-[320px] z-[-1]"
       ></div>
-      
+
       <div
         className="
     relative flex place-items-center 
@@ -62,5 +62,5 @@ export function Background() {
     before:lg:h-[900px] z-[-1]"
       ></div>
     </>
-  );
+  )
 }

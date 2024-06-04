@@ -1,4 +1,4 @@
-import { SocialMedias } from "./SocialMedia";
+import { SocialMedias } from './SocialMedia'
 
 interface HeaderProps {}
 
@@ -10,5 +10,5 @@ export function Header({}: HeaderProps) {
       </div>
       <SocialMedias />
     </div>
-  );
+  )
 }
