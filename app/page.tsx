@@ -8,13 +8,15 @@ import { Technologies } from "./components/Technologies";
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center p-4">
+      <div className="flex  flex-col items-center p-4 h-screen w-full">
         <Header />
         <Background />
         <AnimateLogo />
+      </div>
+      <div className="flex  flex-col items-center p-4 h-screen w-full">
         <About />
-      </main>
-      <div className="flex flex-col items-center justify-between p-4">
+      </div>
+      <div className="flex flex-col items-center justify-between p-4 h-screen">
         <Technologies />
       </div>
     </>

@@ -9,6 +9,12 @@ export function About() {
   };
   return (
     <div className="mt-20 max-w-5xl w-full font-mono text-sm lg:flex flex-col ">
+      <h2
+        className="text-3xl font-bold  pb-8 dark:text-white text-black  text-purple-600 electrolize-regular "
+        data-aos="fade-up"
+      >
+        Who am I
+      </h2>
       <p className="text-lg">
         <span className=" text-xl">
           Hi, my name is <span className="text-sky-600 ">Sette</span>.
@@ -46,9 +52,9 @@ export function About() {
       </p>
       <p className="text-lg">
         My true passion lies in 
-        <span className="text-sky-600"> frontend development</span>, where I`&apos;`ve been dedicating
+        <span className="text-sky-600"> frontend development</span>, where I&apos;ve been dedicating
         my time to personal projects using the <span className="text-blue-600">  React</span> and <span className="text-red-600"> Angular</span> frameworks.
-        Through these experiences, I`&apos;`ve been able to enhance my skills in
+        Through these experiences, I&apos;ve been able to enhance my skills in
         creating engaging and functional user interfaces, applying the latest
         concepts and best practices with <span className="text-local-purple-600"> UI</span>/<span className="text-local-purple-600">UX</span> design.
       </p>
