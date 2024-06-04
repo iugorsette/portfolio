@@ -34,7 +34,6 @@ body {
   }
 }
 
-
 .neon-btn {
   color: var(--default-color);
   position: relative;
@@ -49,18 +48,30 @@ body {
 
 .neon-btn::before {
   color: #ffffff;
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg,  #8e2de2, #4a00e0);
+  background: linear-gradient(45deg, #8e2de2, #4a00e0);
   opacity: 0;
   z-index: -1;
   animation: neonAnimation 1s infinite alternate;
-  animation-timing-function: ease-in-out; 
+  animation-timing-function: ease-in-out;
 }
+
+.electrolize-regular {
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.electrolize-bold {
+  font-family: "Electrolize", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+} 
 
 .neon-btn:hover::before {
   opacity: 1;
@@ -97,6 +108,62 @@ body {
     background: linear-gradient(100deg, #8e2de2, #4a00e0);
   }
   100% {
-    background:  linear-gradient(110deg,  #8e2de2, #4a00e0);
+    background: linear-gradient(110deg, #8e2de2, #4a00e0);
+  }
+}
+
+.typewriter-with-delay {
+  overflow: hidden;
+  border-right: 0.15em solid transparent;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  width: 0;
+
+  animation: show 0s 4s forwards, typing 3.5s steps(40, end) forwards,
+    blink-caret 0.75s step-end infinite;
+  animation-delay: 4s;
+}
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid transparent;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #4a00e0;
+  }
+}
+@keyframes show {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #4a00e0;
+  }
+}
+@keyframes hidden {
+  from {
+    border-color: #4a00e0;
+  }
+  to {
+    border-color: transparent;
   }
 }

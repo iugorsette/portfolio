@@ -8,10 +8,10 @@ export function About() {
     link.click();
   };
   return (
-    <div className="mt-20 max-w-5xl w-full font-mono text-sm lg:flex flex-col">
+    <div className="mt-20 max-w-5xl w-full font-mono text-sm lg:flex flex-col ">
       <p className="text-lg">
         <span className=" text-xl">
-          Hi, my name is <span className="text-sky-600">Sette</span>.
+          Hi, my name is <span className="text-sky-600 ">Sette</span>.
         </span>
         <br /> I am currently studying{" "}
         <a
@@ -44,10 +44,18 @@ export function About() {
         <span className="text-sky-600"> GitHub</span>,
         <span className="text-sky-600"> GraphQL</span>, and more.
       </p>
-      
+      <p className="text-lg">
+        My true passion lies in 
+        <span className="text-sky-600"> frontend development</span>, where I've been dedicating
+        my time to personal projects using the <span className="text-blue-600">  React</span> and <span className="text-red-600"> Angular</span> frameworks.
+        Through these experiences, I've been able to enhance my skills in
+        creating engaging and functional user interfaces, applying the latest
+        concepts and best practices with <span className="text-local-purple-600"> UI</span>/<span className="text-local-purple-600">UX</span> design.
+      </p>
+
       <div className="w-full flex justify-center">
         <button
-          className="neon-btn bg-local-purple-600 text-white font-bold py-2 px-4 rounded mt-8 w-32 self-center"
+          className="neon-btn bg-local-purple-600 text-white font-bold py-2 px-4 rounded mt-8 w-32 self-center "
           type="button"
           onClick={downloadcv}
         >
