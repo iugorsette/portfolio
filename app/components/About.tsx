@@ -1,12 +1,6 @@
-export function About() {
-  const downloadcv = () => {
-    const pdfUrl = '/Profile.pdf'
+import DownloadButton from '../animation/DownloadButton'
 
-    const link = document.createElement('a')
-    link.href = pdfUrl
-    link.download = 'Profile.pdf'
-    link.click()
-  }
+export function About() {
   return (
     <div className="mt-20 max-w-5xl w-full font-mono text-sm lg:flex flex-col ">
       <h2
@@ -63,15 +57,7 @@ export function About() {
         <span className="text-local-purple-600">UX</span> design.
       </p>
 
-      <div className="w-full flex justify-center">
-        <button
-          className="neon-btn bg-local-purple-600 text-white font-bold py-2 px-4 rounded mt-8 w-32 self-center "
-          type="button"
-          onClick={downloadcv}
-        >
-          Download CV
-        </button>
-      </div>
+      <DownloadButton />
     </div>
   )
 }
