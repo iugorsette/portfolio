@@ -1,6 +1,7 @@
 'use client'
 import React, { useRef, useEffect } from 'react'
 import { LottieRefCurrentProps } from 'lottie-react'
+import { DownloadSimple } from '@phosphor-icons/react'
 
 const DownloadButton: React.FC = () => {
   const downloadcv = () => {
@@ -26,6 +27,7 @@ const DownloadButton: React.FC = () => {
         type="button"
         onClick={downloadcv}
       >
+        <DownloadSimple className="arrow-up" size={18} />
         Download CV
       </button>
     </div>

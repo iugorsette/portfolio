@@ -11,7 +11,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/docs/_site/$1"
+        "dest": "docs/_site/$1"
       }
     ]
   }

@@ -5,7 +5,6 @@ import { OrbitControls, useGLTF, Stars } from '@react-three/drei'
 import { Planet } from './Planet'
 import PlanetControls from './PlanetControls'
 import StarControls from './StarControls'
-import { Astronaut } from './Astronaut'
 
 const Space: React.FC = () => {
   const { scene } = useGLTF('/exoplanet.glb')
