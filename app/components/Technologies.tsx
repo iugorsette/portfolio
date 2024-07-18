@@ -3,6 +3,7 @@ import { techData } from '../db/tech'
 import { getImage } from '../provider/image'
 
 export function Technologies() {
+  const mobile = document.documentElement.clientWidth < 1024
   const getBorderColor = (tech: string) => {
     switch (tech.toLowerCase()) {
       case 'reactjs':
@@ -41,9 +42,9 @@ export function Technologies() {
             <Image
               src={getImage(tech.stack)}
               alt={tech.name}
-              width={150}
-              height={150}
-              className="lg:w-32 md:w-16 rounded-lg"
+              width={mobile? 50 : 150}
+              height={mobile? 50 : 150}
+              className="rounded-lg"
             />
 
             <div>

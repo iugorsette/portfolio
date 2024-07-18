@@ -1,12 +1,17 @@
-import React from 'react';
-import { ArrowUp } from '@phosphor-icons/react';
+import React from 'react'
+import { ArrowUp, Broom } from '@phosphor-icons/react'
 
 type PlanetControlsProps = {
-  handleCreatePlanet: () => void;
-  clean: () => void;
-};
+  handleCreatePlanet: () => void
+  clean: () => void
+}
 
-const PlanetControls: React.FC<PlanetControlsProps> = ({ handleCreatePlanet, clean }) => {
+const PlanetControls: React.FC<PlanetControlsProps> = ({
+  handleCreatePlanet,
+  clean,
+}) => {
+  const mobile = document.documentElement.clientWidth < 1024
+  const message = mobile ? 'Create' : 'Create Random Planet'
   return (
     <div className="absolute flex flex-row items-center gap-4">
       <a href="#top" className="neon-btn rounded">
@@ -17,13 +22,13 @@ const PlanetControls: React.FC<PlanetControlsProps> = ({ handleCreatePlanet, cle
         type="button"
         onClick={handleCreatePlanet}
       >
-        Create a random planet
+        {message}
       </button>
       <button className="neon-btn rounded" type="button" onClick={clean}>
-        Clean
+        {mobile? <Broom className="animate-pulse" size={18} /> : "Clean Planets"} 
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default PlanetControls;
+export default PlanetControls

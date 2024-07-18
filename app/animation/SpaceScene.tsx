@@ -92,7 +92,7 @@ const SpaceScene: React.FC = () => {
       <div className="absolute top-4 left-4 w-full flex justify-center">
         <PlanetControls handleCreatePlanet={handleCreatePlanet} clean={clean} />
       </div>
-      <div className="absolute bottom-4 left-4">
+      <div className="absolute bottom-12 left-4">
         <StarControls stars={stars} setStars={setStars} />
       </div>
     </div>

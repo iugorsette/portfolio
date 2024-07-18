@@ -1,15 +1,16 @@
-import React from 'react';
+import React from 'react'
 
 type StarControlsProps = {
-  stars: any;
-  setStars: React.Dispatch<React.SetStateAction<any>>;
-};
+  stars: any
+  setStars: React.Dispatch<React.SetStateAction<any>>
+}
 
 const StarControls: React.FC<StarControlsProps> = ({ stars, setStars }) => {
+  const mobile = document.documentElement.clientWidth < 1024
   return (
-    <div className=" flex flex-col gap-4 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+    <div  className="bg-transparent dark:bg-transparent shadow-none rounded-none p-0 flex-row gap-4 justify-between items-center " >
       <div className="flex flex-col">
-        <label>Stars count</label>
+        <label>{mobile ? 'Stars' : 'Number of stars'}</label>
         <input
           type="range"
           min="1000"
@@ -21,7 +22,7 @@ const StarControls: React.FC<StarControlsProps> = ({ stars, setStars }) => {
         />
       </div>
       <div className="flex flex-col">
-        <label>Stars factor</label>
+        <label>{mobile ? 'Speed' : 'Stars speed'}</label>
         <input
           type="range"
           min="1"
@@ -33,7 +34,7 @@ const StarControls: React.FC<StarControlsProps> = ({ stars, setStars }) => {
         />
       </div>
       <div className="flex flex-col">
-        <label>Stars radius</label>
+        <label>{mobile ? 'Saturation' : 'Stars saturation'}</label>
         <input
           type="range"
           min="100"
@@ -45,7 +46,7 @@ const StarControls: React.FC<StarControlsProps> = ({ stars, setStars }) => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default StarControls;
+export default StarControls

@@ -10,8 +10,8 @@ export function About() {
       >
         Who am I
       </h2>
-      <div className="flex flex-col md:flex-col md:items-center lg:flex-row items-start w-full ">
-        <div className=" w-3/4">
+      <div className="flex flex-col md:flex-col md:items-center lg:flex-row lg:items-start w-full ">
+        <div className="md:w-full lg:w-3/4">
           <p className="text-lg">
             <span className="text-xl">
               Hi, my name is <span className="text-sky-600">Sette</span>.
