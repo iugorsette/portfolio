@@ -77,6 +77,21 @@ body {
   font-style: normal;
 } 
 
+.neon-btn:hover .arrow-up {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30%);
+  }
+  60% {
+    transform: translateY(-15%);
+  }
+}
 .neon-btn:hover::before {
   opacity: 1;
 }
