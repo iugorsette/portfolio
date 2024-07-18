@@ -57,11 +57,5 @@ export const techData = [
     url: 'https://github.com/iugorsette/heroes',
     description:
       'I developed a web game in React JS, using a heroes API. Choose your heroes, face off against a bot. Check out the code on GitHub here.',
-  },{
-    name: 'Projeto Controle de Estoque',
-    stack: 'ReactJS',
-    url: 'https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t1-pmv-ads-2024-1-e4-projcontroledeestoque',
-    description:
-      'I developed a web application using ReactJS, that is the app for Stock control system, and you can see it on my GitHub.',
   }
 ]
