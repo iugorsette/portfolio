@@ -1,0 +1,18 @@
+{
+    "builds": [
+      {
+        "src": "docs/**",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "docs/_site"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/docs/_site/$1"
+      }
+    ]
+  }
+  
