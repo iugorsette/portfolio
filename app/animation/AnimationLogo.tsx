@@ -19,12 +19,12 @@ export const AnimateLogo = () => {
         </div>
         <div className=" lg:w-1/2 lg:h-1/2 md:w-full md:h-full flex flex-col items-center">
           <h2 className="text-3xl font-bold text-center dark:text-white text-black typewriter text-purple-600 electrolize-regular">
-            FullStack Developer
+            Opa bão?
           </h2>
           <h2 className="text-2xl font-bold text-center typewriter-with-delay">
-            <span className="text-sky-600 electrolize-regular">UI</span>/
-            <span className="text-sky-600 electrolize-regular">UX</span>
-            <span className="text-purple-600"> Designer</span>
+            <span className="text-sky-600 electrolize-regular">
+              Arrasta para baixo
+            </span>
           </h2>
         </div>
       </div>

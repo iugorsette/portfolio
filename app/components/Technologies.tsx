@@ -24,9 +24,9 @@ export function Technologies() {
   return (
     <div className="mt-5 max-w-5xl w-full font-mono text-sm lg:flex flex-col">
       <p className="text-lg mb-8">
-        You can find some of
-        <span className="text-local-purple-600"> my personal projects </span>
-        below.
+        Você pode encontrar alguns dos
+        <span className="text-local-purple-600"> meus projetos pessoais </span>
+        abaixo.
       </p>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-2 lg:text-left gap-2">
         {techData.map((tech) => (
