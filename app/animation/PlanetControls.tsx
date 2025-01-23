@@ -11,7 +11,7 @@ const PlanetControls: React.FC<PlanetControlsProps> = ({
   clean,
 }) => {
   const mobile = document.documentElement.clientWidth < 1024
-  const message = mobile ? 'Create' : 'Create Random Planet'
+  const message = mobile ? 'Criar' : 'Criar planeta aleatório'
   return (
     <div className="absolute flex flex-row items-center gap-4">
       <a href="#top" className="neon-btn rounded">
@@ -25,7 +25,7 @@ const PlanetControls: React.FC<PlanetControlsProps> = ({
         {message}
       </button>
       <button className="neon-btn rounded" type="button" onClick={clean}>
-        {mobile? <Broom className="animate-pulse" size={18} /> : "Clean Planets"} 
+        {mobile? <Broom className="animate-pulse" size={18} /> : "Resetar"} 
       </button>
     </div>
   )
