@@ -1,4 +1,3 @@
-import { url } from 'inspector'
 import angular from '../../public/assert/angular.png'
 export const techData = [
   {
@@ -23,13 +22,13 @@ export const techData = [
     description:
       'Para fins acadêmicos, repliquei a calculadora gnome com alguns recursos usando react, e você pode vê-la no meu GitHub.',
   },
-  {
-    name: 'Pizzapp',
-    stack: 'React Native',
-    url: 'https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp',
-    description:
-      'Criei um aplicativo usando React Native para fins escolares. É um aplicativo móvel para entrega de pizza, e você pode encontrá-lo no meu GitHub.',
-  },
+  // {
+  //   name: 'Pizzapp',
+  //   stack: 'React Native',
+  //   url: 'https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp',
+  //   description:
+  //     'Criei um aplicativo usando React Native para fins escolares. É um aplicativo móvel para entrega de pizza, e você pode encontrá-lo no meu GitHub.',
+  // },
   {
     name: 'Task app frontend',
     stack: 'ReactJs',
@@ -57,5 +56,11 @@ export const techData = [
     url: 'https://github.com/iugorsette/heroes',
     description:
       'Desenvolvi um jogo web em React JS, usando uma API de heróis. Escolha seus heróis, enfrente um bot. Confira o código no GitHub aqui.',
+  },{
+    name: 'Quadro de horários',
+    stack: 'Java',
+    url: 'https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e5-proj-escola-bolivar',
+    description:
+      'Participei de um projeto da faculdade de um projeto quadro de horários para a escola Bolívar, usando Java e JQuerry. Confira o código no GitHub aqui.',
   }
 ]

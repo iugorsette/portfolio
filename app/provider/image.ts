@@ -4,6 +4,7 @@ import reactNative from '../../public/assert/react-native.png'
 import nodejs from '../../public/assert/nodejs.png'
 import nestjs from '../../public/assert/nestjs.png'
 import dotnet from '../../public/assert/dotnet.png'
+import java from '../../public/assert/java.png'
 
 export function getImage(tech: string) {
   switch (tech.toLowerCase()) {
@@ -17,6 +18,8 @@ export function getImage(tech: string) {
       return angular
     case 'nestjs':
       return nestjs
+    case 'java':
+      return java
     case '.net c#':
       return dotnet
     default:

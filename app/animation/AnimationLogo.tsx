@@ -19,7 +19,7 @@ export const AnimateLogo = () => {
         </div>
         <div className=" lg:w-1/2 lg:h-1/2 md:w-full md:h-full flex flex-col items-center">
           <h2 className="text-3xl font-bold text-center dark:text-white text-black typewriter text-purple-600 electrolize-regular">
-            Opa bão?
+            Opa, bão?
           </h2>
           <h2 className="text-2xl font-bold text-center typewriter-with-delay">
             <span className="text-sky-600 electrolize-regular">
